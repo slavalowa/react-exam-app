@@ -1,0 +1,15 @@
+@mixin flex-column() {
+    display: flex;
+    flex-direction: column;
+}
+
+.Wrapper {
+   @include flex-column();
+
+    height: 100vh;
+
+    & main {
+        @include flex-column();
+        flex-grow: 1;
+    }
+}

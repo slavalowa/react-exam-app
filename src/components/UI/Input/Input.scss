@@ -1,0 +1,34 @@
+$warning: #f01f30;
+
+.Input {
+    margin-bottom: 1.5vh;
+
+    & input {
+        display: block;
+        box-sizing: border-box;
+
+        border: 1px solid #bebebe;
+        border-radius: 7px;
+
+        padding: 7px;
+        margin: 0 0 5px;
+        width: 100%;
+    }
+
+    & span {
+        color: $warning;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    & label {
+        margin-bottom: 3px;
+        padding: 0;
+        display: block;
+        font-weight: bold;
+    }
+
+    &.Invalid {
+        color: $warning;
+    }
+}

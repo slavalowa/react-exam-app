@@ -1,0 +1,22 @@
+$nav_position_value: 40px;
+
+.BurgerToggle {
+    position: fixed;
+    top: $nav_position_value;
+    left: $nav_position_value;
+
+    font-size: 20px;
+    cursor: pointer;
+    color: #fff;
+
+    transition: opacity, left .25s ease-in;
+    z-index: 100;
+
+    &:hover {
+        opacity: .7;
+    }
+
+    &.open {
+        left: 320px;
+    }
+}

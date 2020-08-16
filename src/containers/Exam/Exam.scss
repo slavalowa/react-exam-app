@@ -1,0 +1,19 @@
+.Exam {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+
+    padding-top: 15vh;
+    width: 100%;
+
+    background: linear-gradient(90deg, #734b6d  0%, #42275a 100%);
+
+    & h1 {
+        color: #fff;
+        margin-left: 10px;
+    }
+
+    &Box {
+        width: 600px;
+    }
+}

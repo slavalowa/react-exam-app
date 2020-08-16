@@ -1,0 +1,45 @@
+$white: #fff;
+
+.ExamCatalogue {
+    display: flex;
+    flex-grow: 1;
+
+    text-align: center;
+    justify-content: center;
+
+    padding-top: 100px;
+    width: 100%;
+
+    background: linear-gradient(90deg, #FEAC5E 0%, #C779D0 45%, #4BC0C8 100%);
+
+    & h1 {
+        color: $white;
+    }
+
+    & ul {
+        list-style: none;
+
+        width: 200px;
+        margin: 0;
+        padding: 0;
+    }
+
+    & li {
+        padding: 10px;
+        margin-bottom: 10px;
+
+        border: 1px solid $white;
+        border-radius: 5px;
+
+        &:hover {
+            background: rgba(255, 238, 238, .7);
+            transition: .25s ease-in-out;
+        }
+
+        & a {
+            text-decoration: none;
+            color: $white;
+        }
+    }
+}
+

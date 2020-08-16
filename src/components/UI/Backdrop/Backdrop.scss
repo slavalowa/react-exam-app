@@ -1,0 +1,13 @@
+$position_value: 0;
+
+.Backdrop {
+    background: rgba(0, 0, 0, .6);
+    position: fixed;
+
+    top: $position_value;
+    left: $position_value;
+    bottom: $position_value;
+    right: $position_value;
+    z-index: 50;
+
+}

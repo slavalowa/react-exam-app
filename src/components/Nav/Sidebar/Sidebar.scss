@@ -1,0 +1,46 @@
+.Sidebar {
+    left: 0;
+    top: 0;
+    bottom: 0;
+    position: fixed;
+    box-sizing: border-box;
+
+    width: 80%;
+    max-width: 300px;
+
+    padding: 20px 10px;
+
+    background: linear-gradient(180deg, #734b6d 0%, #bebebe 100%);
+
+    transform: translateX(0px);
+    transition: transform .22s ease-in;
+    z-index: 90;
+
+    &.close {
+        transform: translateX(-300px);
+    }
+
+    & ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    & li {
+        margin-bottom: 25px;
+
+        & a {
+            color: #ffffff;
+            font-size: 25px;
+            font-weight: bold;
+            text-decoration: none;
+            position: relative;
+            padding: 0 20px 10px 20px;
+            transition: opacity .3s;
+
+            &:hover, &.active {
+                opacity: .7;
+            }
+        }
+    }
+}

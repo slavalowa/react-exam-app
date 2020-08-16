@@ -1,0 +1,47 @@
+$success: rgba(161, 240, 69, 1);
+$error: rgba(240, 87, 108, 1);
+$primary: #2884f6;
+
+$light_grey: #ccc;
+$dark: #000;
+
+.Button {
+    display: inline-block;
+    padding: 1vh 2vh;
+    margin-right: 2vh;
+
+    border-radius: 4px;
+    border: 1px solid $light_grey;
+    color: $dark;
+
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:active {
+        box-shadow: inset 3px 3px 2px rgba(0, 0, 0, .4);
+    }
+
+    &:disabled {
+        background: $light_grey;
+        color: $dark;
+        cursor: not-allowed;
+    }
+}
+
+.success {
+    background: $success;
+}
+
+.error {
+    background: $error;
+}
+
+.primary {
+    background: $primary;
+    color: #fff;
+}

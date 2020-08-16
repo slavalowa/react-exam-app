@@ -1,0 +1,28 @@
+.ExamBuilder {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+
+    padding-top: 50px;
+    width: 100%;
+
+    background: linear-gradient(270deg, #1d2b64 0%, #f8cdda 100%);
+
+
+    & h1 {
+        text-align: center;
+    }
+
+    & > div {
+        width: 100%;
+        max-width: 600px;
+        padding: 0 20px;
+    }
+
+    & form {
+        background: rgba(255, 238, 238, .6);
+        box-shadow: 3px 3px 3px rgba(50, 50, 50, .5);
+        border-radius: 5px;
+        padding: 15px;
+    }
+}
